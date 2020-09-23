@@ -1,13 +1,95 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-image: linear-gradient(#24C6DC, #514A9D);
+    background-attachment: fixed;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a{
+    text-decoration: none;
+    color: #354548;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.row {
+    height: 90vh;
+}
+
+.app_sidebar {
+    text-align: center;
+    background-color: white;
+    height: 100%;
+    border-radius: 20px;
+    padding: 25px 15px;
+    box-shadow: 0 0 10px black;
+}
+
+.app_main-content {
+    background-color: white;
+    border-radius: 20px;
+    height: 100%;
+    padding: 25px 15px;
+    box-shadow: 0 0 10px black;
+}
+
+.sidebar_display_picture{
+    height: 110px;
+    width: 120px;
+    object-fit: contain;
+    border-radius: 30px;
+}
+
+.sidebar_title{
+    background-color: rgb(204, 200, 200);
+    border-radius: 30px;
+}
+
+.sidebar_name{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.7rem;
+    margin: 20px 0;
+}
+
+.sidebar_about_me{
+    margin: 20px 0;
+}
+
+.sidebar_item {
+    margin-bottom: 6px;
+    padding-top: 6px;
+    font-family: serif;
+    height: 40px;
+    font-size: 1.05rem;
+    border-radius: 30px;
+}
+
+.sidebar_icon{
+    width: 25px;
+    height: 25px;
+}
+
+.sidebar_email{
+    background-image: linear-gradient(to right bottom,#24C6DC, #514A9D);
+    border-radius: 30px;
+    color: white;
+    margin: 15px 25px 0px;
+    cursor: pointer;
+    transition: all 3s linear;
+}
+
+.sidebar_email:hover{
+    transform: scale(1.2);
+}
+
+@media(max-width:991px){
+    .app_main-content{
+        margin: 30px 0;
+    }
 }
